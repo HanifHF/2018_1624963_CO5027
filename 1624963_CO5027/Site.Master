@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="_1624963_CO5027.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body runat="server">
+
+ <div id="page">
+    <div id="header">
+ <h1><asp:ContentPlaceHolder ID="Heading1" runat ="server"></asp:ContentPlaceHolder></h1>
+
+    </div>
+
+    <div id="menu">
+        <div id="nav">
+<ul>
+  <li><a href="default.aspx">Home</a></li>
+  <li><a href="product.aspx">Product</a></li>
+  <li><a class="active" href="about.aspx">About</a></li>
+  <li><a href="contact.aspx">Contact</a></li>
+  <li><a href="register.aspx">Register</a></li>
+</ul>
+
+
+        </div>
+    </div>
+
+
+
+ <div id="content_area">
+    <h2><asp:ContentPlaceHolder ID ="Heading2" runat ="server"></asp:ContentPlaceHolder></h2>
+
+     <asp:ContentPlaceHolder ID ="MainContent" runat ="server"></asp:ContentPlaceHolder>
+    
+ </div>
+
+
+
+</div>
+</body>
+</html>
