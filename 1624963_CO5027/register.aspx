@@ -14,7 +14,7 @@
 <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p>
 <p class="b"> Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
 
-
+    
 <table>
   <tr>
   	<td>
