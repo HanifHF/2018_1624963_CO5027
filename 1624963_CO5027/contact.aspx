@@ -21,18 +21,27 @@
    
     <td> 
  		<p class="a"> In need of help? Kindly fill out the form below and we will get back to you as soon as possible. </p>
-    	<form action="/action_page.php">
-   		 <p class="f"> Name: </p>
-  		<input name="Your Name" type="text" size="35"/>
-  		<br/> <br/>
-   		 <p class="f"> Email: </p>
- 		<input name="Your Email" type="text" size="35"/>
-  		<br/> <br/>
-  		  <p class="f"> Message: </p>
-  		<input name="Your Message" type="text" size="35"/>
-  		<br/> <br/>
-  		<input type="submit"/>
-		</form>
+    	<form id="form1" runat="server">
+   		 &nbsp;<br/> 
+            <asp:ValidationSummary ID="Validation_Summary" runat="server" DisplayMode="SingleParagraph" Height="44px" Width="223px" />
+            <br />
+            <p class="f"> Email: </p>
+ 		&nbsp;<asp:TextBox ID="txtSubject" runat="server"></asp:TextBox>
+  		<br/> 
+            <asp:RequiredFieldValidator ID="reqEmail" runat="server" ControlToValidate="txtBody" Display="None" ErrorMessage="&gt; Please enter email &lt;"></asp:RequiredFieldValidator>
+            <br />
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Not  a valid Email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ControlToValidate="txtBody"></asp:RegularExpressionValidator>
+            <br/>
+  		  <p class="f"> Subject: </p>
+  		&nbsp;<asp:TextBox ID="txtBody" runat="server" OnTextChanged="txtBody_TextChanged"></asp:TextBox>
+  		<br/> 
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Display="None" ErrorMessage="RequiredFSubject Cannot Be emptyieldValidator" ControlToValidate="txtSubject"></asp:RequiredFieldValidator>
+            <br/>
+  		&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+            <br />
+            <br />
+            <asp:Literal ID="litResult" runat="server"></asp:Literal>
+        </form>
  	</td>
   </tr>
 </table>
