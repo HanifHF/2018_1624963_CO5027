@@ -8,6 +8,21 @@
     <link href="css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
+    <style>
+        /*Map height*/
+        #mapx{
+            height: 80%;
+           
+        }
+        /*optional sample to fill the window*/
+
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 
 
@@ -19,31 +34,17 @@
 
     </div>
 
-    <div id="menu">
-        <div id="nav">
-<ul>
-  <li><a href="default.aspx">Home</a></li>
-  <li><a href="product.aspx">Product</a></li>
-  <li><a class="active" href="about.aspx">About</a></li>
-  <li><a href="contact.aspx">Contact</a></li>
-  <li><a href="register.aspx">Register</a></li>
-</ul>
-
-
-        </div>
-    </div>
-
-
-
- <div id="content_area">
+ <div id ="map">
     <h2><asp:ContentPlaceHolder ID ="Heading2" runat ="server"></asp:ContentPlaceHolder></h2>
 
      <asp:ContentPlaceHolder ID ="MainContent" runat ="server"></asp:ContentPlaceHolder>
-    
+
  </div>
 
 
-
 </div>
+
+<asp:ContentPlaceHolder ID ="Gmap" runat ="server"> </asp:ContentPlaceHolder>
 </body>
+
 </html>

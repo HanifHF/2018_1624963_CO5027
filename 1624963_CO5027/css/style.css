@@ -224,6 +224,8 @@ ul {
     position: fixed;
     height: 100%;
     overflow: auto;
+    top: 2px;
+    left: 1px;
 }
 
 li a {
@@ -261,3 +263,10 @@ th, td {
     text-align: center;
 }
 /* Table end here */
+
+/* Google Map Start here 
+#mapx {
+    height: 700px;
+    width: 700px;
+}
+    */

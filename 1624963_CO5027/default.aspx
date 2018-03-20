@@ -1,16 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="_1624963_CO5027._default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <title>Home</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
 
+    <!--Dynamic Navigation start here-->
+
+        <div id="menu">
+        <div id="nav">
+<ul>
+  <li><a class="active" href="default.aspx">Home</a></li>
+  <li><a href="product.aspx">Product</a></li>
+  <li><a href="about.aspx">About</a></li>
+  <li><a href="contact.aspx">Contact</a></li>
+  <li><a href="register.aspx">Register</a></li>
+</ul>
+
+
+        </div>
+    </div>
+
+    <!--Dynamic Navigation end here-->
+
     <div style="margin-left: 15%;padding:1px 16px;height:1000px;">
 <p> 
 
-<img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"> </p>
+<!-- <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> -->
 <p class="b"> Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
 
 <!--Slide show start here--> 
@@ -18,17 +38,17 @@
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="images/banner1.jpeg" alt="Slide Show 1" height="500" width="1000">
+  <img src="images/banner1.jpeg" alt="Slide Show 1" height="500" width="1000"/>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="images/banner2.jpeg" alt="Slide Show 2" height="500" width="1000">
+  <img src="images/banner2.jpeg" alt="Slide Show 2" height="500" width="1000"/>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="images/banner3.jpeg" alt="Slide Show 3" height="500" width="1000">
+  <img src="images/banner3.jpeg" alt="Slide Show 3" height="500" width="1000"/>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -36,7 +56,7 @@
 
 </div>
 
-<br>
+<br/>
 
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
