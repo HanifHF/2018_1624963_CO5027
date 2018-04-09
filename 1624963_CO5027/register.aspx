@@ -28,13 +28,13 @@
 
     <form id="form1" runat="server">
     
-
 <div style="margin-left: 15%;padding:1px 16px;height:1000px;">
-<!-- <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> -->
-<p class="b"> try to remove this| Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
+<p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> 
+<p class="b"> Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
 
     
-<table>
+<table style="margin-left: auto; margin-right:auto; padding:1px 16px;height:1000px;">
+
   <tr>
   	<td>
   	<p class="c">  &nbsp;Already have an account ? Sign in below.</p> 

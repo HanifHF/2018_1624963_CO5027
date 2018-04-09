@@ -8,21 +8,22 @@
     <link href="css/style.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-    <style>
+        <style>
         /*Map height*/
         #mapx{
-            height: 80%;
-           
+            height: 60%;
+            width: 60%;
         }
-        /*optional sample to fill the window*/
+        /*optional sample to fill the window
 
         html, body{
             height: 100%;
             margin: 0;
             padding: 0;
-        }
+ 
+        }*/
     </style>
+
 </head>
 
 

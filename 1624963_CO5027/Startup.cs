@@ -17,7 +17,7 @@ namespace _1624963_CO5027
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString ("/Login.aspx")
+                LoginPath = new PathString ("/register.aspx")
             });
         }
     }

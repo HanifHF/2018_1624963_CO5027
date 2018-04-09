@@ -27,16 +27,16 @@
 
     <!--Heading start  here-->
 
-<div style="margin-left: 15%;padding:1px 16px;height:1000px;">
+    <div style="margin-left: 15%;padding:1px 16px;height:1000px;">
 
-<!-- <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> -->
+ <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> 
 
 <p class="b"> Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
 
 
 
+<table style="margin-left: auto; margin-right:auto; padding:1px 16px;height:1000px;">
 
-<table>
   <tr>
     <th> <p> <img src="images/mall.JPEG" alt="Store" height="500" width="900"> </p> 
 <p class="a">Duchamp are renowned for our intuitive use of colour and patterning, so don't be afraid to debunk some style myths with our fabulous range of ties.</p> 

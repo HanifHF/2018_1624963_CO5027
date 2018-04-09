@@ -30,7 +30,7 @@ namespace _1624963_CO5027
             var userStore = new UserStore <IdentityUser> (identityDbContext);
             var manager = new UserManager <IdentityUser> (userStore);
 
-            IdentityRole identityRole = new IdentityRole("Admin");
+            IdentityRole identityRole = new IdentityRole("RegisteredUser");
             roleManager.Create(identityRole);
 
             var user = new IdentityUser()
@@ -42,8 +42,8 @@ namespace _1624963_CO5027
             IdentityResult result = manager.Create(user, ID_SignInPassword.Text);
             if (result.Succeeded)
             {
-                //to do: log them in
-                manager.AddToRole(user.Id, "Admin");
+                // (ﾟ￢ﾟ)to do: log them in 
+                manager.AddToRole(user.Id, "RegisteredUser");
                 manager.Update(user);
                 ID_Register.Text = "Registration Succesful";
             }
@@ -53,10 +53,11 @@ namespace _1624963_CO5027
             }
         }
 
-        //This is for login
+        //This is for login  （｡･ρ･）
         protected void BTN_Login2_Click(object sender, EventArgs e)
         {
             {
+
                 var identityDbContext = new IdentityDbContext("IdentityConnectionString");
                 var userStore = new UserStore<IdentityUser>(identityDbContext);
                 var userManager = new UserManager<IdentityUser>(userStore);
@@ -64,6 +65,9 @@ namespace _1624963_CO5027
                 if (user != null)
                 {
                     LogUserIn(userManager, user);
+                    litLoginError.Text = "LOG IN SUCCESSFUL !!";
+                    Server.Transfer("default.aspx", true);
+
                 }
 
                 else
@@ -79,6 +83,11 @@ namespace _1624963_CO5027
             var userIdentity = usermanager.CreateIdentity(
                 user, DefaultAuthenticationTypes.ApplicationCookie);
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+
+            if (Request.QueryString["ReturnUrl"] != null)
+            {
+                Response.Redirect(Request.QueryString["ReturnUrl"]);
+            }
 
         }
     }

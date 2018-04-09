@@ -1,11 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="_1624963_CO5027._default" %>
+﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="_1624963_CO5027._default" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <title>Home</title>
+    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
 
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -28,9 +30,9 @@
     <!--Dynamic Navigation end here-->
 
     <div style="margin-left: 15%;padding:1px 16px;height:1000px;">
-<p> 
+ 
 
-<!-- <p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> -->
+<p> <img src="images/logo.jpeg" class="image1" alt="Duchamp London Logo"/> </p> 
 <p class="b"> Includes luxury shirts, trousers, neckties, tailored suits and much more. Duchamp is a British men's clothing and accessories company founded in 1989. </p>
 
 <!--Slide show start here--> 
@@ -98,7 +100,8 @@ function showSlides(n) {
 <br/>
 <br/>
 
-<table>
+<table style="margin-left: auto; margin-right:auto; padding:1px 16px;height:1000px;">
+
   <tr>
    <td> <p> <img src="images/Item1.JPEG" alt="Item1" height="400" width="300"> </p>  <p class="c">   Summer Garden silk tie | White  </p>   <p class="d"> BND 138.00  </p>   <p class="e"> __________________________________ </p>  <p class="f"> View Details  | 	<img src="images/trolley.JPEG" alt="Trolley" height="20" width="20"> Add to cart </p> </td>
     <td> <p> <img src="images/Item2.JPEG" alt="Item2" height="400" width="300"> </p>  <p class="c">   Classical floral silk tie | Green  </p>   <p class="d"> BND 135.00 </p>   <p class="e"> __________________________________ </p>  <p class="f"> View Details  | 	<img src="images/trolley.JPEG" alt="Trolley" height="20" width="20"> Add to cart </p> </td>

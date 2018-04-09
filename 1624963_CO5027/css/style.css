@@ -116,9 +116,9 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -253,20 +253,29 @@ li a:hover:not(.active) {
 table, th, td {
     border: 40px solid #1C2833;
     border-collapse: collapse;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
     background-color: #1C2833;
+    /* margin-top: 44px;*/
 }
 th, td {
     padding: 5px;
     text-align: center;
 }
-/* Table end here */
 
-/* Google Map Start here 
-#mapx {
-    height: 700px;
-    width: 700px;
+
+/* Table end here */
+    
+#map {
+    width:240px;
+    height: 144px;
 }
-    */
+/*
+    html, body {
+    height: 10%;
+    margin: 0 auto;
+    padding: 0;
+}
+*/
+
+
+
+    
