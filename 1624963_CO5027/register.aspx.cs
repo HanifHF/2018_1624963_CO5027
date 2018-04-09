@@ -77,7 +77,7 @@ namespace _1624963_CO5027
             }
         }
 
-        private void LogUserIn ( UserManager <IdentityUser> usermanager, IdentityUser user)
+        private void LogUserIn ( UserManager <IdentityUser> usermanager, IdentityUser user) 
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = usermanager.CreateIdentity(
